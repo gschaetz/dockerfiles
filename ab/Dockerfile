@@ -4,7 +4,6 @@
 # docker run --rm -it \
 # 	jess/ab
 #
-#
 FROM alpine:latest
 LABEL maintainer "Jessie Frazelle <jess@linux.com>"
 
