@@ -4,9 +4,5 @@
     email: true
   services:
     - docker
-  - stage: test
   script:
     - ./test.sh
-  - stage: deploy
-  script:
-    - ./push.sh 
