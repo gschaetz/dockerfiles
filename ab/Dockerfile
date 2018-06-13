@@ -2,7 +2,7 @@
 # in a container
 #
 # docker run --rm -it \
-# 	jess/ab
+# 	gschaetz/ab
 #
 FROM alpine:latest
 LABEL maintainer "Jessie Frazelle <jess@linux.com>"
