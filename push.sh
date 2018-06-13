@@ -44,7 +44,7 @@ for f in "${files[@]}"; do
 
 	(
 	set -x
-	docker build -t ${base}:${suite} ${build_dir}
+	docker build -t gschaetz/${base}:${suite} ${build_dir}
 	echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
         docker push gschaetz/${base}:${suite}
 	)
