@@ -1,12 +1,13 @@
 ---
-  sudo: required
-  notifications:
-    email: true
-  services:
-    - docker
-  - stage: test
-  script:
-    - ./test.sh
-  - stage: deploy
-  script:
-    - ./push.sh 
+sudo: required
+notifications:
+  email: true
+services:
+  - docker
+
+jobs:
+  include:
+    - stage: test
+      script: ./test.sh
+    - stage: deploy
+      script: ./push.sh
